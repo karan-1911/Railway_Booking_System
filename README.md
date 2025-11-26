@@ -2,6 +2,7 @@
 
 Railway Express is a web-based railway ticket booking system built with **Python (Flask)**, **HTML**, and **CSS**.  
 It allows users to securely login, book tickets, view bookings, and cancel tickets with PNR numbers. The system handles limited seats and waiting lists automatically.
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/cfef9e6d-84ee-4eb2-8302-5acb5f647f45" />
 
 ---
 
