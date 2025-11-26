@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="home-hero">
+    <h1>Welcome to Railway Express</h1>
+    <p>Your seamless online ticket booking system</p>
+    <div class="home-buttons">
+        <a href="/book" class="btn-primary">Book Ticket</a>
+        <a href="/view" class="btn-primary">View Tickets</a>
+    </div>
+</div>
+
+<div class="home-info">
+    <div class="info-card">
+        <h3>Fast Booking</h3>
+        <p>Book your train tickets quickly with just a few clicks.</p>
+    </div>
+    <div class="info-card">
+        <h3>Limited Seats & PNR</h3>
+        <p>Track confirmed and waiting tickets using unique PNR numbers.</p>
+    </div>
+    <div class="info-card">
+        <h3>Easy Cancellation</h3>
+        <p>Cancel your tickets safely using PNR with instant updates.</p>
+    </div>
+</div>
+{% endblock %}

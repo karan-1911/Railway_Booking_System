@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card">
+    <h2>Book a Ticket</h2>
+    <form method="POST">
+        <input type="text" name="name" placeholder="Passenger Name" required>
+        <input type="number" name="age" placeholder="Age" required>
+
+        <select name="train" required>
+            <option value="">-- Select Train --</option>
+            {% for train in trains %}
+            <option value="{{ train }}">{{ train }}</option>
+            {% endfor %}
+        </select>
+
+        <button type="submit" class="btn-primary">Book Ticket</button>
+    </form>
+</div>
+{% endblock %}
+

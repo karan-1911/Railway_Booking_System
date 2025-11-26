@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card">
+    <h2>All Tickets</h2>
+    {% if tickets %}
+        <div class="table-container">
+            <table class="tickets-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Train</th>
+                        <th>Seat</th>
+                        <th>Status</th>
+                        <th>PNR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for t in tickets %}
+                    <tr>
+                        <td>{{ t.name }}</td>
+                        <td>{{ t.age }}</td>
+                        <td>{{ t.train }}</td>
+                        <td>{{ t.seat }}</td>
+                        <td>{{ t.status }}</td>
+                        <td>{{ t.pnr }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    {% else %}
+        <p>No tickets booked yet.</p>
+    {% endif %}
+</div>
+{% endblock %}
