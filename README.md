@@ -37,6 +37,9 @@ It allows users to securely login, book tickets, view bookings, and cancel ticke
 4. Open your browser and go to:
     ```ardunio
     http://127.0.0.1:5000/login
+5. login details
+   username: admin
+   password: 123
 ## project structure
 
 ```
